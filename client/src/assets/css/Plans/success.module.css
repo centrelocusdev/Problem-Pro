@@ -1,0 +1,41 @@
+.container{
+    width:80vw;
+    height:80%;
+    margin:auto;
+    margin-top: 12%;
+    text-align: center;
+    
+}
+.container img{
+    height:200px;
+    width:200px;
+    border-radius: 100%;
+}
+.container p{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top:20px;
+    color:#495057;
+}
+.container button{
+    margin-top:10px;
+    margin-bottom:20px;
+    width:200px;
+}
+.click{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+.backBox{
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
+.backBox img{
+    height:20px;
+    width:20px;
+    cursor:pointer;
+}

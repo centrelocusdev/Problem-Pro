@@ -1,0 +1,104 @@
+
+.header{
+  color: #03256C;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.container {
+    border-radius: 20px;
+    background:white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-y:scroll;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    margin-top:10px;
+  }
+  .loading{
+    margin-top:30px;
+  }
+  .table{
+    width: 100%;
+    border-style:none;
+    border-collapse: collapse;
+    padding:10px;
+
+  }
+  .tableHeading{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:-20px;
+  }
+  .tr{
+    background-color:pink;
+
+  }
+  .tr{
+    border-style:none;
+    margin: 20px, 0;
+    
+
+  }
+td, th {
+    /* border: 1px solid #dddddd; */
+    border-style:none;
+    text-align: left;
+    padding: 8px;
+
+  }
+ 
+.tr th{
+    box-shadow: 0px -1px 0px 0px #E7E7ED inset;
+    color:#03256C;
+    background: rgba(141, 233, 251, 0.50);
+    height:max-content;
+
+
+    
+}
+.tr td{
+    height: 64px;
+    align-items: flex-start;
+    align-self: stretch;
+    color:#272833;
+    height:max-content;
+
+}
+  
+.tr:nth-child(even) {
+  background: #FFCDEA;
+
+}
+
+.tr:nth-child(odd){
+    background-color: #fff;
+}
+.noData{
+  margin-top:50px;
+}
+.lessonDescription{
+  cursor:pointer;
+  display:flex;
+  /* gap:2px; */
+}
+
+@media (max-width: 480px){
+  .header{
+    font-size:18px;
+  }
+.tr td {
+  font-size:10px;
+}
+.mainTR td{
+  font-size:16px;
+}
+}
