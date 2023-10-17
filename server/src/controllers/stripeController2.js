@@ -297,7 +297,7 @@ exports.handleWebhook = async (req, res) => {
           .unix(eventData.current_period_start)
           .format("YYYY-MM-DD");
           endDate = new Date(eventData.current_period_end * 1000);
-            const result = await saveWebhooksDataToDbForUpdate(user, customer,subs_plan_id, startDate, endDate,subs_status, trial_start, trial_end, durationInDays);
+            const result = await saveWebhooksDataToDbForUpdate(user, customer,subs_plan_id, startDate, endDate,subs_status, trial_start, trial_end, durationInDays, trial_status);
             if(result){
               // console.log(result);
             }   
