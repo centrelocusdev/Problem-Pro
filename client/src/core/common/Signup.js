@@ -57,16 +57,18 @@ export default function Signup() {
         setLoading(false);
         toast(res.data.message);
         // alert(res.data.message);
-        navigate('/dashboard');
+        // navigate('/dashboard');
         if (res.data.status === 'success') {
           localStorage.setItem("token", res.data.data.token);
-          navigate("/dashboard");
+          navigate("/plans");
         } else {
           setFormData({
               name: "",
               email: "",
               password: "",
             });
+            setLoading(false);
+            toast.error("Something went wrong!");
         }
       }
       

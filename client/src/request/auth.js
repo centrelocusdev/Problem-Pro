@@ -8,6 +8,7 @@ const Backend_URL = process.env.REACT_APP_BACKEND_URL;
 
  const registerUser=async(formData)=>{
   try {
+   
     const res = await axios.post(`${Backend_URL}/register`, formData);
     return res;
   } catch (error) {

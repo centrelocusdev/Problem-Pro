@@ -39,7 +39,7 @@ export default function AboutUs() {
             <div className="body">
               {AboutData.map((item ,i)=> {
                 return(
-                  <div style={i===1 ? {backgroundColor: "#FFCDEA"} : {}} className="about-card">
+                  <div key={item.heading} style={i===1 ? {backgroundColor: "#FFCDEA"} : {}} className="about-card">
                     <h2 style={i===1? {color: "#03256C"}: {}}>{item.heading}</h2>
                     <div style={i===1 ? {backgroundColor: "#03256C"} : {}}className="image-box">
                     <img src={item.img} alt="about-card"/>

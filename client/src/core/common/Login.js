@@ -52,6 +52,8 @@ export default function Login({ loggedIn }) {
             email: "",
             password: "",
           });
+          setLoading(false);
+          toast.error("something went wrong!");
       }
     } catch (error) {
       if(error && error.response && error.response.data){

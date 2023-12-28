@@ -11,7 +11,7 @@ const CancelStripe = () => {
             <img src={Cancel} alt="cross"/>
             <p>Something weng wrong!</p>
             <NavLink to="/">
-            <button className='primary-btn'>GO TO HOMEPAGE</button>
+            <button style={{margin: "auto", marginTop: "20px"}} className='primary-btn'>GO TO HOMEPAGE</button>
             </NavLink>
         </div>
     </div>

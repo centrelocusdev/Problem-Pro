@@ -61,7 +61,7 @@ export default function Left({ _id , setIdFunction }) {
           {questions &&
             questions.map((item) => {
               return (
-                <li >
+                <li  >
                   
                   <button className={`btn-3 ${item._id === selectedItem ? 'active': ""}`}
                     onClick={() => {

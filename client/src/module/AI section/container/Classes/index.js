@@ -15,7 +15,7 @@ export default function Index() {
                 {
                     index>1 &&<>
                 <Link to={"/dashboard/"+ele}>{ele}</Link>
-                {index<arr.length-1 && <img src={arrow}/>}
+                {index<arr.length-1 && <img src={arrow} alt='arrow'/>}
                     </>
                 }
                 </>

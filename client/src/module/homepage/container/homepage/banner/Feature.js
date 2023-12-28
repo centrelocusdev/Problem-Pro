@@ -46,6 +46,7 @@ export default function Feature() {
                         {Features.map((item) => {
                             return(
                                 <FeatureCard
+                                key={item.heading}
                                 heading={item.heading}
                                 data={item.data}
                                 img={item.img}
