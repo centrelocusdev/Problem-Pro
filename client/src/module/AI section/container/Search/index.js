@@ -18,14 +18,12 @@ export default function Index() {
             const res = await auth.getUserData();
             let subs = false;
             let trial = false;
-            console.log(res.data.data[0].subs_status, res.data.data[0].trial_status );
             if(res && res.data && res.data.data && res.data.data[0].subs_status && res.data.data[0].subs_status === 'active'){
                 subs = true;                
             }
             if(res && res.data && res.data.data && res.data.data[0].trial_status && res.data.data[0].trial_status === 'active'){
                 trial = true;
             }
-            console.log(subs, trial);
             if(subs === true || trial === true){
                 setIsPlanActive(true);
             }

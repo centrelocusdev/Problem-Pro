@@ -22,8 +22,6 @@ const creationOfProductAndPrice = async (plan, amount) => {
             product: product.id,
           })
           .then((price) => {
-            console.log('Plan'+ plan + 'Success! Here is your starter subscription product id: ' + product.id);
-            console.log('Plan'+ plan + 'Success! Here is your premium subscription price id: ' + price.id);
             return { productId: product.id, priceId: price.id };
           });
       });
@@ -120,7 +118,6 @@ exports.createProductAndPrice = async (req, res) => {
 
 exports.createCheckoutSession = async (req, res) => {
   // Step2: Create a Checkout Session
-  console.log(req.body);
   const user = req.user;
   const isTrialActive = req.body.isTrialActive;
   const priceType = req.body.priceType;
