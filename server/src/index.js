@@ -22,15 +22,15 @@ app.use((_req, res, next) => {
 
   next();
 });
-const corsOptions ={
-    origin:'https://main--sweet-halva-a45e9f.netlify.app', 
+//const corsOptions ={
+    //origin:'https://main--sweet-halva-a45e9f.netlify.app', 
     // origin: 'http://localstorage:8000',
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
+    //credentials:true,            //access-control-allow-credentials:true
+    //optionSuccessStatus:200
+//}
 app.use('/uploads', express.static('uploads'));
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.post('/webhook', express.raw({ type: 'application/json' }),stripeController2.handleWebhook);
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json()) 
